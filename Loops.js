@@ -128,7 +128,6 @@
 // console.log(averageArr(arr3))
 //
 
-
 let arr = [5,7,100,10,8,17,1]
 let x = -Infinity;
 
