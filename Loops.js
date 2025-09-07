@@ -276,3 +276,49 @@ function Negative(arr,x){
 }
 
 console.log("Count"+ " "+ Negative(arrN,x1))
+
+
+// 3. Find the Largest Element in an array;
+
+let arrl = [1,2,3,4,100];
+
+
+function LargestElement(arr){
+    let largest =-1
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i]>largest){
+           largest = arr[i]
+        }
+    }
+    return largest
+}
+
+console.log("LargestElement"+ " " +  LargestElement(arrl));
+
+
+// 4. Find the SMALLEST Element in an array
+
+let arrS = [1,2,3,-4,-5]
+let smallest = 0
+
+function smallestElement(arr,smallest){
+    let result;
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i]<smallest){
+            result = arr[i]
+        }
+    }
+    return result;
+}
+
+console.log("SmallestElement"+ " " +  smallestElement(arrS,smallest));
+
+// 5. Find SecondLargest Element in an array
+
+
+
+
+
+
+
+
