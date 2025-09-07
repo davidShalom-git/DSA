@@ -244,15 +244,35 @@ let arr = [1,2,3,4]
 // 1. Write a function that searches for an element in an array and returns the index, if the element is not present then just return -1
 
 let arr1 = [1,2,3,4]
-let x = 2;
+let x = 3;
 
 function Search(arr,x){
-    let target;
-    for(let i = 0; i<arr.length;i++){
-        if(arr[i] === x){
-            target = arr[i]
+    for(let i = 0; i<arr.length; i++){
+        if(arr[i] === x){ // arr[i] means = arr[0] = 1, arr[1] = 2, like that, if it matches, the i number will be print
+          return i; // print the for loop number
         }
-        return target;
+
     }
+    return -1;
+
 }
-console.log(Search(arr1,x))
+console.log("Linear Search" + " " + Search(arr1,x))
+
+
+
+// 2. Return the no of negatives
+
+let arrN = [1,2,3,-4,-5]
+let x1 = 0
+
+function Negative(arr,x){
+    let count = 0;
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i] < x){
+            count ++;
+        }
+    }
+    return count;
+}
+
+console.log("Count"+ " "+ Negative(arrN,x1))
