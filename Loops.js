@@ -255,5 +255,4 @@ function Search(arr,x){
         return target;
     }
 }
-
 console.log(Search(arr1,x))
