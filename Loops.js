@@ -211,10 +211,49 @@
 
 // function inside loop
 
-function name(){
-    console.log("Greninga")
+// function name(){
+//     console.log("Greninga")
+// }
+//
+// for(let i = 0;i<5;i++){
+//     name()
+// }
+
+// Arrays + Loops
+
+let arr = [1,2,3,4]
+// console.log(arr)
+// console.log(arr.length)
+// console.log(arr[0])
+
+// for(let i = 0;i < arr.length; i++){ // arr.length = no of elements // starting from 1
+//     console.log(arr[i])
+// }
+
+// Print Even Numbers
+
+// for(let i =0;i<arr.length;i++){
+//     let result = [];
+//   if(arr[i] % 2 === 0){
+//     console.log(arr[i])
+//   }
+// }
+
+// for loops - 2
+
+// 1. Write a function that searches for an element in an array and returns the index, if the element is not present then just return -1
+
+let arr1 = [1,2,3,4]
+let x = 2;
+
+function Search(arr,x){
+    let target;
+    for(let i = 0; i<arr.length;i++){
+        if(arr[i] === x){
+            target = arr[i]
+        }
+        return target;
+    }
 }
 
-for(let i = 0;i<5;i++){
-    name()
-}
+console.log(Search(arr1,x))
