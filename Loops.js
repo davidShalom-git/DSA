@@ -144,28 +144,27 @@ function LargestElement(arr){
 console.log("LargestElement"+ " " +  LargestElement(arrl));
 
 
-// 4. Find the SMALLEST Element in an array
-
-let arrS = [1,2,3,-4,-5]
-let smallest = 0
-
-function smallestElement(arr,smallest){
-    let result;
-    for(let i = 0;i<arr.length;i++){
-        if(arr[i]<smallest){
-            result = arr[i]
-        }
-    }
-    return result;
-}
-
-console.log("SmallestElement"+ " " +  smallestElement(arrS,smallest));
-
-
-
 // 5. Find SecondLargest Element in an array
 
+let arrS = [4,9,0,2,8,7,1,10,12,13]
 
+function SecondLargest(arr){
+    let firstLargest = -Infinity;
+    let secondLargest = -Infinity;
+
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i]>firstLargest){
+            secondLargest = firstLargest
+            firstLargest = arr[i]
+        }
+        else if(arr[i]>secondLargest){
+            secondLargest = arr[i]
+        }
+    }
+    return secondLargest
+}
+
+console.log("Second Largest " + SecondLargest(arrS))
 
 
 
