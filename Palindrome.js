@@ -1,4 +1,4 @@
-// Concept to be remember..
+// Concept to be remember...
 
 // 1. Last digit => n%10 => reminder
 // 2. remove last => n/10 => quotient
