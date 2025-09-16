@@ -10,7 +10,7 @@ function Count(){
     while(n>0){
         n = Math.floor(n/10);
         count++;
-        // Math.floor rounds down the value, if it contains point numbers, it will round the numbers;
+        // Math.floor rounds down the value, if it contains point numbers, it will round the numbers
     }
     return count;
 }
