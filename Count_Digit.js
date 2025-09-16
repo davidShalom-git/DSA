@@ -18,3 +18,5 @@ function Count(){
 console.log(Count());
 
 
+console.log(Math.ceil(10.1)) // it will round up or increase the number;
+
