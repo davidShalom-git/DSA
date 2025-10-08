@@ -29,3 +29,23 @@ function remove(arr,val){
 }
 
 console.log(remove([1,2,3,4,5],3));
+
+
+// Reverse a String
+
+function StringReverse(arr){
+    let len = arr.length;
+    let halflen = Math.floor(len / 2);
+
+    for(let i=0; i<halflen; i++){
+
+        // swapping (arr[i], arr[len-1-i] )
+
+        let temp = arr[i];
+        arr[i] = arr[len-1-i];
+        arr[len-1-i] = temp;
+       console.log(arr);
+    }
+}
+
+StringReverse(['h','e','l','l','o'])
