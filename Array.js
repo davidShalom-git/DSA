@@ -44,7 +44,7 @@ function StringReverse(arr){
         let temp = arr[i];
         arr[i] = arr[len-1-i];
         arr[len-1-i] = temp;
-       console.log(arr);
+       console.log(arr)
     }
 }
 
