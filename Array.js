@@ -70,3 +70,47 @@ function MoveZeros(arr){
 }
 
 console.log(MoveZeros([1,0,0,3,0,3]))
+
+
+// Find Consecutive One's
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var findMaxConsecutiveOnes = function(nums) {
+
+    let current = 0;
+    let max = 0
+    for(let i = 0;i<nums.length;i++){
+        if(nums[i]=== 1){
+            current++;
+        }
+        else{
+            max = Math.max(current,max);
+            current = 0;
+        }
+    }
+    return Math.max(max,current);
+
+};
+
+
+
+// Partial Sum
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var missingNumber = function(nums) {
+
+    let n = nums.length;
+    let totalsum = n * (n+1)/2;
+    let partialsum = 0
+    for(let i = 0;i<n;i++){
+        partialsum = partialsum + nums[i];
+    }
+
+    return totalsum-partialsum
+};
