@@ -35,3 +35,7 @@ function Binary(arr,target){
 }
 
 console.log(Binary([1,2,3,4],4));
+
+
+// Bubble Sort
+
