@@ -67,3 +67,12 @@ function fact(n){
     return n * fact(n-1);
 }
 console.log(fact(5));
+
+// Fibonacci
+
+function fib(n){
+    if (n<1) return n;
+    return fib(n-1) + fib(n-2)
+}
+
+//
