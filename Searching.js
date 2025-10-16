@@ -77,4 +77,4 @@ function SelectionSort(arr){
     return arr
 }
 
-console.log(SelectionSort([5,1,4,2,3]));
+console.log(SelectionSort([5,1,4,2,3]))
