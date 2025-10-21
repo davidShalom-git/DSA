@@ -88,7 +88,7 @@ function Palindrome(n,x){
 console.log(Palindrome(n,ncopy));
 
 
-// Remove Elements
+// Remove Duplicates
 
 function RemoveDuplicates(arr){
     let x = 0;
@@ -105,3 +105,4 @@ function RemoveDuplicates(arr){
 console.log(RemoveDuplicates([0,0,1,1,2,2,3,3,4])); // in-place
 
 
+// Remove Elements
