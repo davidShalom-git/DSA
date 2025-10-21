@@ -99,7 +99,9 @@ function RemoveDuplicates(arr){
 
         }
     }
-    return x+1;
+    return x+1; // the last iteration will be there so, it will no before iteration count, by using +1 we can say no of elements also, array starts with index 0, so we add +1 there;
 }
 
 console.log(RemoveDuplicates([0,0,1,1,2,2,3,3,4])); // in-place
+
+
