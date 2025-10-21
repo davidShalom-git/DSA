@@ -153,3 +153,27 @@ function Zeros(arr){
 }
 
 console.log(Zeros([0,1,0,3,2]));
+
+
+// Return the Maximum Consecutive One's
+
+function MaxOne(arr){
+    let current = 0;
+    let max = 0
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i] === 1){
+            current++;
+        }
+        else
+        {
+            max = Math.max(max,current);
+            current = 0;
+        }
+    }
+    return Math.max(max,current);
+}
+
+console.log(MaxOne([0,1,1,0,1,1,1]));
+
+
+//
