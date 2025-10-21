@@ -48,4 +48,20 @@ function SecondLargest(arr){
 console.log(SecondLargest([2,3,5,100,-1,0]));
 
 
+// Count the no of digits;
+
+function CountDigits(){
+    let count = 0;
+    let n  = 12345; // the result , i.e, the count should be 4
+    while(n>0){
+        n = Math.floor(n/10); // divide and store the value in n, then count will increase
+        count++;
+
+    }
+
+    return count;
+}
+
+console.log(CountDigits());
+
 
