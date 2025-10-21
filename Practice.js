@@ -65,3 +65,25 @@ function CountDigits(){
 console.log(CountDigits());
 
 
+// Check Palindrome
+
+let n = 1214;
+let ncopy = n;
+function Palindrome(n,x){
+    let rev = 0;
+    while(n>0){
+       let rem = Math.floor(n%10);
+        rev = (10*rev) + rem;
+        n = Math.floor(n/10);
+    }
+    if(rev === x){
+        return true
+    }
+    else{
+        return false
+    }
+
+}
+
+console.log(Palindrome(n,ncopy));
+
