@@ -218,3 +218,18 @@ console.log(sum(5));
 
 
 // return the sum of odd numbers in array
+
+function OddSum(n){
+    if(n<1){
+        return n;
+    }
+    if(n%2===1){
+        return n+OddSum(n-1)
+    }
+    return OddSum(n-1);
+}
+
+console.log(OddSum(5))
+
+
+
