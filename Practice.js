@@ -254,3 +254,26 @@ function fib(n){
     return fib(n-1) + fib(n-2)
 }
 console.log(fib(5))
+
+console.log("Above are Recursion to revise----------------------------------")
+
+// Searching and Sorting
+
+// Linear Search
+
+function LinearSearch(arr,x){
+    for(let i = 0; i<arr.length;i++){
+        if(arr[i] === x){
+            return i
+        }
+    }
+    return -1;
+}
+
+console.log(LinearSearch([1,2,3,4,5],4))
+
+
+// Binary Search
+
+
+
