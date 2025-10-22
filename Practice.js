@@ -341,3 +341,37 @@ function SelectionSort(arr){
 }
 
 console.log(SelectionSort([5,1,6,2,7]))
+
+
+
+// Merge Sort
+
+function MergeSort(arr){
+    if(arr.length<=1) return arr;
+    let mid = arr.length/2;
+    let left = MergeSort(arr.slice(0,mid));
+    let right = MergeSort(arr.slice(mid));
+
+    return Merge(left,right)
+}
+
+function Merge(left,right){
+    let res = []
+    let i = 0;
+    let j = 0;
+    while(i<left.length && j<right.length){
+        if(left[i]<right[j]){
+            res.push(left[i]);
+            i++
+        }
+        else{
+            res.push(right[j]);
+            j++
+        }
+    }
+    return [...res, ...left.slice(i), ...right.slice(j)]
+}
+
+console.log(MergeSort([8,4,5,6,9,1,3,6]))
+
+console.log("Revision Over...........")
