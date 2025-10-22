@@ -232,4 +232,24 @@ function OddSum(n){
 console.log(OddSum(5))
 
 
+// factorial
 
+function Factorial(n){
+    if(n === 1){ // it should return the number if the end contains number instead of 0
+        return n;
+    }
+    return n * Factorial(n-1)
+}
+
+
+console.log(Factorial(5));
+
+
+// Fibonacci
+
+function fib(n){
+    if(n<1){
+        return n;
+    }
+
+}
