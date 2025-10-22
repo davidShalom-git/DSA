@@ -195,3 +195,13 @@ console.log("Above are the Arrays Question...........")
 
 // Recursion
 
+function num(n){
+    if(n === 0 ){
+        return n;
+    }
+    console.log(n);
+     n = n-1;
+     num(n);
+}
+
+console.log(num(5));
