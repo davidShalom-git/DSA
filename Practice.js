@@ -200,8 +200,8 @@ function num(n){
         return n;
     }
     console.log(n);
-     n = n-1;
-     num(n);
+     num(n-1);
 }
 
 console.log(num(5));
+
