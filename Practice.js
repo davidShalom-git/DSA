@@ -372,6 +372,7 @@ function Merge(left,right){
     return [...res, ...left.slice(i), ...right.slice(j)]
 }
 
+
 console.log(MergeSort([8,4,5,6,9,1,3,6]))
 
 console.log("Revision Over...........")
