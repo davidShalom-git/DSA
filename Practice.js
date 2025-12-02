@@ -278,23 +278,24 @@ console.log(LinearSearch([1,2,3,4,5],4))
 // Binary Search
 
 function BinarySearch(arr,x){
-    let left = 0;
-    let right = arr.length-1;
+    let left = 0
+    let right =  arr.length -1;
+    while(left<right){
+        let middle = Math.floor((left+right)/2);
 
-        while(left <= right){
-            let middle = Math.floor((left + right)/2);
-            if(arr[middle] === x){
-                return middle
-            }
-            else if(arr[middle] > x){
-                right = middle-1;
-            }
-            else{
-                left = middle+1
-            }
+        if(arr[middle] === x){
+            return middle;
+        }
+        else if(arr[middle] > x){
+           right = middle -1
+        }
+        else
+        {
+            left = middle+1;
         }
 
-        return -1;
+    }
+    return -1;
 }
 
 
