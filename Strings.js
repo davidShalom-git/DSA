@@ -68,3 +68,38 @@ function WordsContain(w,x){
 
 
 console.log(WordsContain(['hello','ello'],'e'))
+
+
+// Jewels and Stones
+
+function js(jew,ston){
+    let count = 0;
+    for(let i = 0;i<ston.length;i++){
+        if(jew.includes(ston[i])){
+            count++;
+        }
+    }
+
+    for(let i = 0;i<ston.length;i++){
+        for(let j = 0;j<jew.length;j++){
+            if(jew[j] === ston[i]){
+                count++;
+            }
+        }
+    }
+
+    let jSet = new Set()
+    for(let i = 0;i<jew.length;i++){
+        jSet.add(jew[i]);
+    }
+
+    for(let i = 0;i<ston.length;i++){
+        if(jSet.has(ston[i])){
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(js('aA','aAABBB'))
