@@ -47,3 +47,24 @@ function lastwordlength(s){
 }
 
 console.log(lastwordlength('  hello world  '));
+
+
+
+// Find Words containing in character
+
+function WordsContain(w,x){
+    let res = [];
+    for(let i=0;i<w.length;i++){
+        for(let j = 0;j<w[i].length;j++){
+            if(w[i][j] === x){
+                res.push(i);
+                break;
+            }
+
+        }
+    }
+    return res;
+}
+
+
+console.log(WordsContain(['hello','ello'],'e'))
