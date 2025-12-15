@@ -31,6 +31,8 @@ function reverseVowels(s){
 console.log(reverseVowels('hello'))
 
 
+// Find the last word length
+
 function lastwordlength(s){
     let n = s.length-1;
     let count = 0;
@@ -103,3 +105,4 @@ function js(jew,ston){
 }
 
 console.log(js('aA','aAABBB'))
+
